@@ -1,0 +1,55 @@
+# IntelliJ IDEA specific files
+.idea/
+*.iml
+*.iws
+out/
+
+# Ignore build directories
+/build/
+/bin/
+/target/
+
+# Gradle specific files
+.gradle/
+/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Maven specific files
+.mvn/
+**/target/
+
+# Logs
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Generated files
+*.class
+*.jar
+*.war
+*.ear
+*.pyc
+*.pyo
+*.pyd
+
+# JetBrains-specific
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/shelf/
+.idea/**/libraries/
+
+# Temporary files
+*.swp
+*.swo
+*~
+
+# Ignore compiled source
+**/target/**
+**/*.swp
+
+# Ignore coverage reports
+/coverage/
+*.cover
+*.lcov
