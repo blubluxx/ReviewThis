@@ -1,0 +1,42 @@
+registerUser(username, password, firstName, lastName, email);
+editUser(); //logged in only
+login(username, password);
+
+seeReviews(); //logged in only
+seeComments(); //logged in only
+createReview(title, rating, content, likes, dislikes, author/username); //logged in only
+deleteReview(id?); //logged in / admin
+likeReview(id?); //logged in only
+dislikeReview(id?); //logged in only
+addComment(id, Comment); //logged in only
+
+createComment(title, contents, author/username); //logged in only
+deleteComment(id); //logged in / admin
+
+promoteToAdmin(username); //admin only
+banUser(username); //admin only
+
+createSeries(title, genre, rating, nSeasons, nEpisodes, [seasons], [episodes], [reviews], [cast]); //admin only
+searchSeries(title/genre/rating)
+getAllSeries();
+getSeries(title/id?) -> [seasons [episodes]], [reviews];
+deleteSeries(title/id?); //admin only
+addReview(title/id?, Review); //logged in only
+removeReview(title/id?, Review); //logged in only
+
+createSeason(series, number, title, genre, rating, nEpisodes, [reviews], [episodes], [cast]); //admin only
+searchSeason(title/genre/rating) -> [episodes], [reviews];
+deleteSeason(title/id?); //admin only
+addReview(title/id?, Review); //logged in only
+removeReview(title/id?, Review); //logged in only
+
+createEpisode(title, genre, duration, rating, [reviews], [cast]); //admin only
+deleteEpisode(title/id?); //admin only
+addReview(title/id?, Review); //logged in only
+removeReview(title/id?, Review); //logged in only
+
+createCastMember(firstName, lastname); //admin only
+deleteCastMember(id?); //admin only
+searchCastMember(firstName, lastName?)
+
+
